@@ -1,0 +1,28 @@
+GET http://localhost:3000/songs
+
+###
+
+GET http://localhost:3000/songs/2
+
+###
+
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "rocky racoon",
+  "album": "The Beatles",
+  "artist": "The Beatles",
+  "year": "1968"
+}
+
+###
+PATCH http://localhost:3000/songs/3
+Content-Type: application/json
+
+{
+  "title": "rocky racoon"
+}
+
+###
+DELETE http://localhost:3000/songs/2
